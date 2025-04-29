@@ -7,11 +7,10 @@ public class Algoritimo_34 {
         int antecessor;
         int sucessor ;
 
-        num_01 = Integer.parseInt(JOptionPane.showInputDialog("Digigte m numero inteiro: "));
-        antecessor = (num_01) - 1;
-        sucessor = (num_01) +1;
-        JOptionPane.showMessageDialog(null,"Antecessor: "+antecessor+"\nSucessor:"+sucessor);
-
+        num_01 = Integer.parseInt(JOptionPane.showInputDialog("Digigte  numero inteiro: "));
+        antecessor = (num_01)++;
+        sucessor = (num_01)--;
+        JOptionPane.showMessageDialog(null,"Antecessor: "+antecessor+"\nSucessor:"+sucessor);  
 
     };
 }
