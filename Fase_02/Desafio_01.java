@@ -83,7 +83,7 @@ public class Desafio_01 {
             case 10:
 
             conta = nivelEscolhido*(1- 3.89/100);
-                System.out.println("Voce teve 3,89% de desconto: "+conta); //R$%.2f%n arredondar numero
+                System.out.println("Voce teve 3,89% de desconto: "+conta); //R$%.2f%n arredondar numero e usar printf
 
             break;
             default:

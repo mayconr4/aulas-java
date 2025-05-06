@@ -3,8 +3,9 @@ import java.util.Scanner;
 public class Desafio_02 {
 
     public static void main(String[] args){
-        String escolher_gasolina;
-        double receberGasolina;
+        String escolher_gasolina, escolha_pagamento;
+        double receberGasolina, desconto;
+        int dia;
 
         Scanner ler = new Scanner(System.in);
 
@@ -17,7 +18,17 @@ public class Desafio_02 {
         escolher_gasolina = ler.nextLine();
 
         receberGasolina = descobrirGasolina(escolher_gasolina);
-        System.out.println("custa"+receberGasolina+"R$");
+        System.out.println("custa"+receberGasolina+"R$"); 
+        
+        System.out.println("Digite o metodo de pagamento: ");
+        escolha_pagamento = ler.nextLine() ; 
+        
+        System.out.println("Digite o  dia que você deseja pagar ");
+        dia = ler.nextInt() ;
+        
+        desconto = descobirDesconto(escolha_pagamento,dia,receberGasolina); 
+        		
+        
 
 
 
