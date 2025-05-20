@@ -12,7 +12,7 @@ public class Exemplo11 {
 			for (segundo = 0; segundo < 60; segundo++) {
 				
 				System.out.println(hora+":"+minuto+":"+segundo);
-				Thread.sleep(-50);
+				Thread.sleep(1200);
 	}
 			}
 		}
