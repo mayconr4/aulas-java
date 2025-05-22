@@ -1,15 +1,25 @@
 package Fase_05;
 
+import java.util.Scanner;
+
 public class UsaGps {
 
 	public static void main(String[] args) {
-		Gps gps = new Gps();
-		String a,b;
-		
-		a = gps.definirIdioma();
-		b = gps.definirRota();
-		gps.mostrar(a,b);
-		
+		Scanner ler = new Scanner(System.in);
+
+		Gps gps = new Gps("ingles", "Inglaterra");
+		gps.mostrar();
+
+
+		System.out.println("Digite o idioma predefinido");
+		gps.idioma = ler.nextLine();
+
+		System.out.println("Digite a arota do destino");
+		gps.rota = ler.nextLine();
+
+		gps.mostrar();
+
+
 
 	}
 
